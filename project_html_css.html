@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- https://btholt.github.io/intro-to-web-dev-v2/project-html-css -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            font-family: "Snell Roundhand";
+            font-size: 60px;
+            font-weight: normal;
+        }
+
+        h3 {
+            font-style: italic;
+            font-size: 30px;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        img {
+            margin-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .content {
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+
+        .content-img {
+            width: 100%;
+        }
+
+        .quarter {
+            width: 25%;
+        }
+
+        .half {
+            width: 50%;
+        }
+
+        .threeQuarter {
+            width: 75%;
+        }
+
+        .item {
+            font-family: "Futura";
+            font-weight: bold;
+            color: #666;
+            font-size: 30px;
+            padding-left: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: space-around;
+            padding: 0px 0px;
+        }
+
+        .politics {
+            background-color: #ffeaa7;
+            flex: 1;
+        }
+
+        .technology {
+            background-color: #81ecec;
+            flex: 1;
+        }
+
+        .local {
+            background-color: #55efc4;
+            flex: 1;
+        }
+
+        .opinion {
+            background-color: #74b9ff;
+            flex: 1;
+        }
+
+        .sports {
+            background-color: #a29bfe;
+            flex: 1;
+        }
+    </style>
+</head>
+<html>
+
+<body>
+    <header>
+        <h1>The News Times</h1>
+    </header>
+    <main class="container">
+        <div class="row">
+            <article class="content quarter">
+                <h3>Student Learns HTML</h3>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic ad in quas alias non! Expedita similique
+                et dolore illum doloremque vel accusantium ut eos tempora sequi, doloribus vitae mollitia praesentium ex
+                ullam? Dolorem labore fugiat neque nostrum porro vero fugit.
+                <br /><br />
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam corrupti, eius odio neque incidunt
+                esse fuga veritatis ipsum, eligendi mollitia, porro quasi provident nisi sit! Doloribus, eligendi nemo,
+                ad laudantium cupiditate aspernatur eveniet asperiores modi praesentium voluptas eos sunt odio.
+            </article>
+            <article class="content half">
+                <h3>BREAKING: Puppies Are Adorable</h3>
+
+                <img class="content-img" src="http://placecorgi.com/500/300" />
+                <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, dolores? Illo dolores, rerum iste aut
+                porro doloribus fugit itaque voluptas.
+                <br /><br />
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium incidunt ullam ea magni ipsam
+                perferendis ratione pariatur enim repellendus quia?
+            </article>
+            <article class="content quarter">
+                <h3>CSS Is Apparently a Thing</h3>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic ad in quas alias non! Expedita similique
+                et dolore illum doloremque vel accusantium ut eos tempora sequi, doloribus vitae mollitia praesentium ex
+                ullam? Dolorem labore fugiat neque nostrum porro vero fugit.
+                <br /><br />
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam corrupti, eius odio neque incidunt
+                esse fuga veritatis ipsum, eligendi mollitia, porro quasi provident nisi sit! Doloribus, eligendi nemo,
+                ad laudantium cupiditate aspernatur eveniet asperiores modi praesentium voluptas eos sunt odio.
+            </article>
+        </div>
+        <div class="row">
+            <article class="content quarter">
+                <h3>Boy Likes Turtles</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, perferendis! Accusamus asperiores quod
+                vitae architecto natus alias fugiat aliquam unde sint expedita repellat rerum, obcaecati hic placeat
+                recusandae quaerat. Dolores excepturi earum minus magni! Animi aperiam eligendi molestias necessitatibus
+                ducimus.
+                <br /><br />
+                Voluptate, ut, cupiditate ducimus vitae blanditiis ex impedit debitis est tempora dolores nam sed. Esse
+                nobis ea inventore qui enim quia beatae ab commodi laboriosam quam aliquam aut perspiciatis fuga nam
+                rerum temporibus voluptatum explicabo voluptate, pariatur ullam laudantium eligendi.
+            </article>
+            <div class="content menu threeQuarter">
+                <div class="item politics">
+                    Politics
+                </div>
+                <div class="item technology">
+                    Technology
+                </div>
+                <div class="item local">
+                    Local
+                </div>
+                <div class="item opinion">
+                    Opinion
+                </div>
+                <div class="item sports">
+                    Sports
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
